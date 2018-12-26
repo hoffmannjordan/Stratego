@@ -10,8 +10,21 @@ counts = [1 ,1,2,3,4,4,4,5,8, 1  , 6  , 1 ]
 class Stratego():
     def __init__(self, board1, board2, turn):
         """Initialization"""
-        self.board = board
+        self.board1 = board1
+        self.board2 = board2
+
         self.turn  = turn
 
     def move(self):
-    	print 'here'
+    	if turn == 0:
+    		board = self.board1
+    	else:
+    		board = self.board2
+
+    	pieces = np.where(board > 0)
+
+    	moves = []
+
+    	for i in range(len(pieces)):
+    		'''player 1 moves from high numbers down'''
+    		'''player 2 moves from low numbers up'''
