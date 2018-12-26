@@ -18,8 +18,9 @@ def gen_random_init_board():
 			j += 1
 
 	board = np.zeros((10,10))
-	board[4:6,2:4] = -1
-	board[4:6,6:8] = -1
+	legal_board = np.zeros((10,10))
+	legal_board[4:6,2:4] = -1
+	legal_board[4:6,6:8] = -1
 	to_put_1 = np.random.permutation(all_pieces)	
 	i = 0
 	j = 0
@@ -38,7 +39,7 @@ def gen_random_init_board():
 		if j == 10:
 			j = 0
 			i += 1
-	return board
+	return board,legal_board
 	# sns.heatmap(board, cmap =sns.palplot(sns.color_palette("hls", 8)))
 	# plt.show()
 

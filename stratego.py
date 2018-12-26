@@ -28,3 +28,5 @@ class Stratego():
     	for i in range(len(pieces)):
     		'''player 1 moves from high numbers down'''
     		'''player 2 moves from low numbers up'''
+
+    		

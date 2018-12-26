@@ -12,3 +12,5 @@ if __name__=='__main__':
 	exit()
 	stratego          = Stratego(1,1)
 	stratego.setup()
+
+	stratego.play()
