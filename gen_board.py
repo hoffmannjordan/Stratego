@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 #pieces = [10,9,8,7,6,5,4,3,2,'S','B','F']
 pieces = [10,9,8,7,6,5,4,3,2, 20 , 21 , 22]
